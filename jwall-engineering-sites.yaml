@@ -1,0 +1,25 @@
+# jwall-engineering-sites project file: a Databricks workspace for this project.
+# The VPC range, cost center, compute policies it may use and the workspace
+# admins are set centrally (projects.databricks-poc.databricks in config.yaml).
+# Fields and behaviour:
+# https://github.com/jwallace145/jwall-engineering-infra/blob/main/docs/databricks.md#the-project-file
+version: 1
+project: databricks-poc
+repository: jwallace145/databricks-poc
+
+# Project, Repository and Environment=prod are cross-checked; the CLI adds
+# ManagedBy, CostCenter and Workspace itself.
+tags:
+  Organization: jwall-engineering
+  Project: databricks-poc
+  Environment: prod
+  Repository: jwallace145/databricks-poc
+  Owner: jwallace145
+
+components:
+  - kind: databricks-workspace
+    compute_policies: [small-interactive, jobs]
+    # Workspace users, by email. Each must already be a Databricks account user.
+    # Admins stay central (config.yaml); an admin listed here is refused.
+    # Changes take effect on the next Databricks plan/apply after merging to main.
+    users: [jfwallace145@gmail.com]
