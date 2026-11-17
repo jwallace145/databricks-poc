@@ -1,5 +1,5 @@
 # Node (commitlint tooling)
 node_modules/
 
-# jwall-engineering-sites run artifacts
-.jwall-engineering-sites/
+# jaws run artifacts
+.jaws/

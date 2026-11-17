@@ -1,8 +1,8 @@
 # Guidance for coding agents
 
 This repository is one Databricks workspace project file,
-[`jwall-engineering-sites.yaml`](jwall-engineering-sites.yaml), provisioned by
-[jwall-engineering-infra](https://github.com/jwallace145/jwall-engineering-infra). Read [README.md](README.md) for what the
+[`jaws.yaml`](jaws.yaml), provisioned by
+[jaws](https://github.com/jwallace145/jaws). Read [README.md](README.md) for what the
 project is and [CONTRIBUTING.md](CONTRIBUTING.md) for the full rules. The rules
 below are the ones you MUST follow.
 
@@ -22,11 +22,11 @@ below are the ones you MUST follow.
   The PR title MUST be a valid Conventional Commit; squash merges use it as the commit message.
 - **Merges are squash or rebase only.** Never create merge commits.
 - **Never apply or destroy the workspace yourself.** It is applied by the owner
-  from jwall-engineering-infra with the Databricks apply workflow. Do not run
-  `jwall-engineering-sites apply` or `destroy` against real resources.
+  from jaws with the Databricks apply workflow. Do not run
+  `jaws apply` or `destroy` against real resources.
 - **Stay inside what the project file may ask for.** The network range, cost
   center, workspace admins and the allowed compute policies are set centrally in
-  jwall-engineering-infra's `config.yaml`. Change them there, not here.
+  jaws's `config.yaml`. Change them there, not here.
 - **`CHANGELOG.md` is Release Please's.** Never edit it by hand.
 - **Keep secrets out of the repo.** The project file holds no credentials.
 

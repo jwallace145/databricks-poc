@@ -1,8 +1,8 @@
-# jwall-engineering-sites project file: a Databricks workspace for this project.
+# jaws project file: a Databricks workspace for this project.
 # The VPC range, cost center, compute policies it may use and the workspace
 # admins are set centrally (projects.databricks-poc.databricks in config.yaml).
 # Fields and behaviour:
-# https://github.com/jwallace145/jwall-engineering-infra/blob/main/docs/databricks.md#the-project-file
+# https://github.com/jwallace145/jaws/blob/main/docs/databricks.md#the-project-file
 version: 1
 project: databricks-poc
 repository: jwallace145/databricks-poc

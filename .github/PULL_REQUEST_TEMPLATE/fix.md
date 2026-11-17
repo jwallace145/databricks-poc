@@ -31,7 +31,7 @@ Squash merges use the title as the commit message.
 
 ## How it was verified
 
-<!-- e.g. the project file validated with the infra CLI, the Databricks plan comment in jwall-engineering-infra reviewed. -->
+<!-- e.g. the project file validated with the infra CLI, the Databricks plan comment in jaws reviewed. -->
 
 -
 
