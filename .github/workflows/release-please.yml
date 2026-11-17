@@ -3,7 +3,7 @@ name: Release
 # Merges to main accumulate changes in a Release Please PR. Merging that PR is
 # the deliberate, human-reviewed act that cuts a version tag and updates
 # CHANGELOG.md. It applies nothing: the workspace is applied from
-# jwall-engineering-infra (the Databricks apply workflow).
+# jaws (the Databricks apply workflow).
 
 on:
   push:

@@ -1,7 +1,7 @@
 # Contributing
 
-This repository holds one file that matters, [`jwall-engineering-sites.yaml`](jwall-engineering-sites.yaml):
-what this Databricks workspace project asks for. [jwall-engineering-infra](https://github.com/jwallace145/jwall-engineering-infra)
+This repository holds one file that matters, [`jaws.yaml`](jaws.yaml):
+what this Databricks workspace project asks for. [jaws](https://github.com/jwallace145/jaws)
 provisions the workspace from it. Everything else here is tooling for the rules below.
 
 ## Setup
@@ -54,13 +54,13 @@ Merging here applies nothing. The infra repository reads the project file from
 this repository's `main`:
 
 1. Merge the change to `main`.
-2. The next pull request in jwall-engineering-infra shows it in its **Databricks plan** comment.
-3. The owner runs the **Databricks apply** workflow in jwall-engineering-infra for this project.
+2. The next pull request in jaws shows it in its **Databricks plan** comment.
+3. The owner runs the **Databricks apply** workflow in jaws for this project.
 
 The network range, cost center, workspace admins and the compute policies the
-project may use are set centrally, in jwall-engineering-infra's `config.yaml`.
+project may use are set centrally, in jaws's `config.yaml`.
 The fields of the project file are documented in
-[docs/databricks.md](https://github.com/jwallace145/jwall-engineering-infra/blob/main/docs/databricks.md#the-project-file).
+[docs/databricks.md](https://github.com/jwallace145/jaws/blob/main/docs/databricks.md#the-project-file).
 
 ## Releases
 
